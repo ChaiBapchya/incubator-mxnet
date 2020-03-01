@@ -17,7 +17,6 @@
 
 # MXNet Continuous Delivery
 
-## Introduction
 
 MXNet aims to support a variety of frontends, e.g. Python, Java, Perl, R, etc. as well as environments (Windows, Linux, Mac, with or without GPU, with or without MKL-DNN support, etc.). This package contains a small continuous delivery (CD) framework used to automate the delivery nightly and release builds across our delivery channels.
 
