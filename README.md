@@ -38,7 +38,7 @@ MXNet is more than a deep learning project. It is a collection of
 [blue prints and guidelines](https://mxnet.apache.org/api/architecture/overview) for building
 deep learning systems, and interesting insights of DL systems for hackers.
 
-Ask Questions
+
 -------------
 * Please use [discuss.mxnet.io](https://discuss.mxnet.io/) for asking questions.
 * Please use [mxnet/issues](https://github.com/apache/incubator-mxnet/issues) for reporting bugs.
