@@ -262,5 +262,5 @@ Label Bot
     - @mxnet-label-bot update [specify comma separated labels here]  
       (i.e. @mxnet-label-bot update [Bug, Python])
 
-  - Available label names which are supported: [Labels](https://github.com/apache/incubator-mxnet/labels)
+
   - For further details: [My Wiki Page](https://cwiki.apache.org/confluence/display/MXNET/Machine+Learning+Based+GitHub+Bot)
