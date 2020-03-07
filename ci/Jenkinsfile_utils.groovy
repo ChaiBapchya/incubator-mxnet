@@ -280,7 +280,7 @@ def main_wrapper(args) {
   } catch (caughtError) {
     caughtError.printStackTrace();  
     node(NODE_UTILITY) {
-      echo "caught ${caughtError}"
+      
       err = caughtError
       currentBuild.result = "FAILURE"
       update_github_commit_status('FAILURE', 'Job failed')
