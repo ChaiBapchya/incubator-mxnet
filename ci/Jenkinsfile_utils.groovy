@@ -287,7 +287,7 @@ def main_wrapper(args) {
     }
   } finally {
     node(NODE_UTILITY) {
-      // Call failure handler
+
       args['failure_handler']()
 
       // Clean workspace to reduce space requirements
