@@ -107,7 +107,7 @@ Output for the above benchmark run, on a CPU machine, would look something like 
 For example, you want to run benchmarks for `nd.add` operator in MXNet, you just run the following python script.
 
 ```
-#!/usr/bin/python
+
 import mxnet as mx
 from mxnet import nd
 
