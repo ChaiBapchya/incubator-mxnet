@@ -198,7 +198,7 @@ def update_github_commit_status(state, message) {
     context = get_github_context()
     echo "context=${context}"
 
-    echo "Publishing commit status..."
+    
     step([
       $class: 'GitHubCommitStatusSetter',
       reposSource: [$class: "ManuallyEnteredRepositorySource", url: repoUrl],
