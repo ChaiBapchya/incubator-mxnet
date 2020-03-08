@@ -25,7 +25,7 @@ max_time = 180
 
 node('utility') {
   // Loading the utilities requires a node context unfortunately
-  checkout scm
+  
   utils = load('ci/Jenkinsfile_utils.groovy')
   custom_steps = load('ci/jenkins/Jenkins_steps.groovy')
 }
