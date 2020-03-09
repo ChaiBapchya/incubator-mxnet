@@ -111,7 +111,7 @@ For example, you want to run benchmarks for `nd.add` operator in MXNet, you just
 import mxnet as mx
 from mxnet import nd
 
-from benchmark.opperf.utils.benchmark_utils import run_performance_test
+
 
 add_res = run_performance_test(nd.add, run_backward=True, dtype='float32', ctx=mx.cpu(),
                                inputs=[{"lhs": (1024, 1024),
