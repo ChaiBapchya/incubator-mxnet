@@ -79,7 +79,7 @@ What's New
 * [Amalgamation and Go Binding for Predictors](https://github.com/jdeng/gomxnet/) - Outdated
 * [Large Scale Image Classification](https://github.com/apache/incubator-mxnet/tree/master/example/image-classification)
 
-Contents
+
 --------
 * [Website](https://mxnet.apache.org)
 * [Documentation](https://mxnet.apache.org/api)
