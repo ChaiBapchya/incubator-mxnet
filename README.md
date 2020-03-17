@@ -27,7 +27,7 @@ Apache MXNet (incubating) for Deep Learning
 
 ![banner](https://raw.githubusercontent.com/dmlc/web-data/master/mxnet/image/banner.png)
 
-Apache MXNet (incubating) is a deep learning framework designed for both *efficiency* and *flexibility*.
+Apache MXNet (incubating) is deep learning framework designed for both *efficiency* and *flexibility*.
 It allows you to ***mix*** [symbolic and imperative programming](https://mxnet.apache.org/api/architecture/program_model)
 to ***maximize*** efficiency and productivity.
 At its core, MXNet contains a dynamic dependency scheduler that automatically parallelizes both symbolic and imperative operations on the fly.
@@ -38,7 +38,7 @@ MXNet is more than a deep learning project. It is a collection of
 [blue prints and guidelines](https://mxnet.apache.org/api/architecture/overview) for building
 deep learning systems, and interesting insights of DL systems for hackers.
 
-Ask Questions
+
 -------------
 * Please use [discuss.mxnet.io](https://discuss.mxnet.io/) for asking questions.
 * Please use [mxnet/issues](https://github.com/apache/incubator-mxnet/issues) for reporting bugs.
