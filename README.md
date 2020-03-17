@@ -44,7 +44,7 @@ Ask Questions
 * Please use [mxnet/issues](https://github.com/apache/incubator-mxnet/issues) for reporting bugs.
 * [Frequent Asked Questions](https://mxnet.apache.org/faq/faq.html)
 
-How to Contribute
+
 -----------------
 * [Contribute to MXNet](https://mxnet.apache.org/community/contribute.html)
 
