@@ -35,7 +35,7 @@ A graph optimization layer on top of that makes symbolic execution fast and memo
 MXNet is portable and lightweight, scaling effectively to multiple GPUs and multiple machines.
 
 MXNet is more than a deep learning project. It is a collection of
-[blue prints and guidelines](https://mxnet.apache.org/api/architecture/overview) for building
+[blue prints and guidelines](https://mxnet.apache.org/api/architecture/overview) for 
 deep learning systems, and interesting insights of DL systems for hackers.
 
 
