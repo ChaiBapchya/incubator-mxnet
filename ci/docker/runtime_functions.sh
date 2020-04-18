@@ -24,8 +24,8 @@ set -ex
 
 NOSE_COVERAGE_ARGUMENTS="--with-coverage --cover-inclusive --cover-xml --cover-branches --cover-package=mxnet"
 NOSE_TIMER_ARGUMENTS="--with-timer --timer-ok 1 --timer-warning 15 --timer-filter warning,error"
-CI_CUDA_COMPUTE_CAPABILITIES="-gencode=arch=compute_52,code=sm_52 -gencode=arch=compute_70,code=sm_70"
-CI_CMAKE_CUDA_ARCH="5.2 7.0"
+CI_CUDA_COMPUTE_CAPABILITIES="-gencode=arch=compute_52,code=sm_52 -gencode=arch=compute_70,code=sm_70 -gencode=arch=compute_75,code=sm_75"
+CI_CMAKE_CUDA_ARCH="5.2 7.0 7.5"
 
 clean_repo() {
     set -ex
