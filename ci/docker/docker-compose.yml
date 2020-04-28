@@ -103,21 +103,12 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.build.ubuntu
-      target: gpuwithcompatenv
+      target: gpu
       args:
         BASE_IMAGE: nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
       cache_from:
-        - ${DOCKER_CACHE_REGISTRY}/build.ubuntu_gpu_cu101:latest
-  ubuntu_build_cuda:
-    image: ${DOCKER_CACHE_REGISTRY}/build.ubuntu_build_cuda:latest
-    build:
-      context: .
-      dockerfile: Dockerfile.build.ubuntu
-      target: gpuwithcudaruntimelibs
-      args:
-        BASE_IMAGE: nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
-      cache_from:
-        - ${DOCKER_CACHE_REGISTRY}/build.ubuntu_build_cuda:latest
+        - build.ubuntu_gpu_cu101:latest
+        - mxnetci/build.ubuntu_gpu_cu101:latest
   ###################################################################################################
   # Dockerfile.publish.test based images used for testing binary artifacts on minimal systems.
   ###################################################################################################
