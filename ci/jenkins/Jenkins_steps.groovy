@@ -151,7 +151,7 @@ def compile_unix_int64_cpu() {
 
 def compile_unix_int64_gpu() {
     return ['GPU: USE_INT64_TENSOR_SIZE': {
-      node(NODE_LINUX_GPU) {
+      node(NODE_LINUX_GPU_G4) {
         ws('workspace/build-gpu-int64') {
           timeout(time: max_time, unit: 'MINUTES') {
             utils.init_git()
