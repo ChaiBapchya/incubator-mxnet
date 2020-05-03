@@ -816,7 +816,7 @@ def test_unix_python3_gpu() {
 
 def test_unix_python3_quantize_gpu() {
     return ['Python3: Quantize GPU': {
-      node(NODE_LINUX_GPU_P3) {
+      node(NODE_LINUX_GPU_G4) {
         ws('workspace/ut-python3-quantize-gpu') {
           timeout(time: max_time, unit: 'MINUTES') {
             try {
@@ -932,7 +932,7 @@ def test_unix_python3_mkldnn_nocudnn_gpu() {
 
 def test_unix_python3_tensorrt_gpu() {
     return ['Python3: TensorRT GPU': {
-      node(NODE_LINUX_GPU_P3) {
+      node(NODE_LINUX_GPU_G4) {
         ws('workspace/build-tensorrt') {
           timeout(time: max_time, unit: 'MINUTES') {
             try {
