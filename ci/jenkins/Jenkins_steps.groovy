@@ -814,25 +814,6 @@ def test_unix_python3_gpu() {
     }]
 }
 
-<<<<<<< HEAD
-=======
-def test_unix_python3_gpu_no_tvm_op() {
-    return ['Python3: GPU TVM_OP OFF': {
-      node(NODE_LINUX_GPU_G4) {
-        ws('workspace/ut-python3-gpu-no-tvm-op') {
-          try {
-            utils.unpack_and_init('gpu_no_tvm_op', mx_lib_cpp_examples_no_tvm_op)
-            python3_gpu_ut_cython('ubuntu_build_cuda')
-            utils.publish_test_coverage()
-          } finally {
-            utils.collect_test_results_unix('tests_gpu.xml', 'tests_python3_gpu.xml')
-          }
-        }
-      }
-    }]
-}
-
->>>>>>> add linux gpu g4 node to all tests using g3 in unix-gpu pipeline
 def test_unix_python3_quantize_gpu() {
     return ['Python3: Quantize GPU': {
       node(NODE_LINUX_GPU_P3) {
