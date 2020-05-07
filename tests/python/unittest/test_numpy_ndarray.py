@@ -261,7 +261,6 @@ def test_identity():
                 assert type(y[1]) == np.ndarray
 
 
-@unittest.skip("Flaky test https://github.com/apache/incubator-mxnet/issues/17840")
 @with_seed()
 @pytest.mark.serial
 def test_np_ndarray_binary_element_wise_ops():
