@@ -155,7 +155,7 @@ def compile_unix_int64_gpu(lib_name) {
         ws('workspace/build-gpu-int64') {
           timeout(time: max_time, unit: 'MINUTES') {
             utils.init_git()
-            utils.docker_run('ubuntu_build_cu101', 'build_ubuntu_gpu_large_tensor', false)
+            utils.docker_run('ubuntu_gpu_cu101', 'build_ubuntu_gpu_large_tensor', false)
             utils.pack_lib(lib_name, mx_cmake_lib)
           }
         }
@@ -320,12 +320,12 @@ def compile_unix_cmake_gpu(lib_name) {
 
 def compile_unix_cmake_gpu_no_rtc(lib_name) {
     return ['GPU: CMake CUDA RTC OFF': {
-        node(NODE_LINUX_CPU) {
-            ws('workspace/build-cmake-gpu-no-rtc') {
-                timeout(time: max_time, unit: 'MINUTES') {
-                  utils.init_git()
-                  utils.docker_run('ubuntu_gpu_cu101', 'build_ubuntu_gpu_cmake_no_rtc', false)
-                  utils.pack_lib(lib_name, mx_cmake_lib)
+      node(NODE_LINUX_CPU) {
+        ws('workspace/build-cmake-gpu-no-rtc') {
+          timeout(time: max_time, unit: 'MINUTES') {
+            utils.init_git()
+            utils.docker_run('ubuntu_gpu_cu101', 'build_ubuntu_gpu_cmake_no_rtc', false)
+            utils.pack_lib(lib_name, mx_cmake_lib)
           }
         }
       }
@@ -1165,7 +1165,7 @@ def test_unix_r_gpu(lib_name) {
         ws('workspace/ut-r-gpu') {
           timeout(time: max_time, unit: 'MINUTES') {
             utils.unpack_and_init(lib_name, mx_lib)
-	    utils.docker_run('ubuntu_gpu_cu101', 'unittest_ubuntu_gpu_R', true)
+	          utils.docker_run('ubuntu_gpu_cu101', 'unittest_ubuntu_gpu_R', true)
             utils.publish_test_coverage()
           }
         }
