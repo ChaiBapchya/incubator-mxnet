@@ -48,6 +48,11 @@ How to Contribute
 -----------------
 * [Contribute to MXNet](https://mxnet.apache.org/community/contribute.html)
 
+Contributor Hall of Fame
+------------------------
+[![](https://sourcerer.io/fame/ChaiBapchya/ChaiBapchya/incubator-mxnet/images/0)](https://sourcerer.io/fame/ChaiBapchya/ChaiBapchya/incubator-mxnet/links/0)[![](https://sourcerer.io/fame/ChaiBapchya/ChaiBapchya/incubator-mxnet/images/1)](https://sourcerer.io/fame/ChaiBapchya/ChaiBapchya/incubator-mxnet/links/1)[![](https://sourcerer.io/fame/ChaiBapchya/ChaiBapchya/incubator-mxnet/images/2)](https://sourcerer.io/fame/ChaiBapchya/ChaiBapchya/incubator-mxnet/links/2)[![](https://sourcerer.io/fame/ChaiBapchya/ChaiBapchya/incubator-mxnet/images/3)](https://sourcerer.io/fame/ChaiBapchya/ChaiBapchya/incubator-mxnet/links/3)[![](https://sourcerer.io/fame/ChaiBapchya/ChaiBapchya/incubator-mxnet/images/4)](https://sourcerer.io/fame/ChaiBapchya/ChaiBapchya/incubator-mxnet/links/4)[![](https://sourcerer.io/fame/ChaiBapchya/ChaiBapchya/incubator-mxnet/images/5)](https://sourcerer.io/fame/ChaiBapchya/ChaiBapchya/incubator-mxnet/links/5)[![](https://sourcerer.io/fame/ChaiBapchya/ChaiBapchya/incubator-mxnet/images/6)](https://sourcerer.io/fame/ChaiBapchya/ChaiBapchya/incubator-mxnet/links/6)[![](https://sourcerer.io/fame/ChaiBapchya/ChaiBapchya/incubator-mxnet/images/7)](https://sourcerer.io/fame/ChaiBapchya/ChaiBapchya/incubator-mxnet/links/7)
+
+
 What's New
 ----------
 * [Version 1.6.0 Release](https://github.com/apache/incubator-mxnet/releases/tag/1.6.0) - MXNet 1.6.0 Release.
