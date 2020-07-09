@@ -42,7 +42,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
  && rm -rf /var/lib/apt/lists/*
 
 # cmake on Ubuntu 18.04 is too old
-RUN python3 -m pip install cmake
+RUN python3 -m pip install cmake==3.17.2
 
 # ccache on Ubuntu 18.04 is too old to support Cuda correctly
 COPY install/deb_ubuntu_ccache.sh /work/
