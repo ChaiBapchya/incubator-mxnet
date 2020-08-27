@@ -133,6 +133,11 @@ elif args.lr_mode == 'cosine':
 else:
     raise ValueError('Invalid lr mode')
 
+def batch_fn(batch, ctx):
+        data = batch.data[0].as_in_context(ctx)
+        label = batch.label[0].as_in_context(ctx)
+        return data, label
+
 # Function for reading data from record file
 # For more details about data loading in MXNet, please refer to
 # https://mxnet.incubator.apache.org/tutorials/basic/data.html?highlight=imagerecorditer
@@ -145,11 +150,6 @@ def get_data_rec(rec_train, rec_train_idx, rec_val, rec_val_idx, batch_size,
     jitter_param = 0.4
     lighting_param = 0.1
     mean_rgb = [123.68, 116.779, 103.939]
-
-    def batch_fn(batch, ctx):
-        data = batch.data[0].as_in_context(ctx)
-        label = batch.label[0].as_in_context(ctx)
-        return data, label
 
     train_data = mx.io.ImageRecordIter(
         path_imgrec=rec_train,
